@@ -1,7 +1,7 @@
 export default class Veiculo{
     // Definição dos atributos (Características)
     protected modelo: string
-    private velocidade: number = 0
+    protected velocidade: number = 0
 
 
     //Métodos do objeto (comportamento)
