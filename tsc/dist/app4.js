@@ -1,22 +1,35 @@
 "use strict";
 exports.__esModule = true;
-var concessionariaDao_1 = require("./concessionariaDao");
+var dao_1 = require("./dao");
 var concessionaria_1 = require("./concessionaria");
 var pessoa_1 = require("./pessoa");
-var pessoaDao_1 = require("./pessoaDao");
-var carroDao_1 = require("./carroDao");
+var veiculo_1 = require("./veiculo");
 var carro_1 = require("./carro");
-var motoDao_1 = require("./motoDao");
 var moto_1 = require("./moto");
-var dao = new concessionariaDao_1.ConcessionariaDao();
 var concessionaria = new concessionaria_1["default"]('', []);
-dao.insert(concessionaria);
-var dao2 = new pessoaDao_1.PessoaDao();
 var pessoa = new pessoa_1["default"]('', '');
-dao2.atualizar(pessoa);
-var dao3 = new carroDao_1.CarroDao();
-var carro = new carro_1["default"]('Corsa', 4);
-dao3.remover(434344);
-var dao4 = new motoDao_1.MotoDao();
+var veiculo = new veiculo_1["default"]();
+var carro = new carro_1["default"]('', 1);
 var moto = new moto_1["default"]();
-dao4.selecionarTodos();
+var dao = new dao_1.Dao();
+var dao2 = new dao_1.Dao();
+var dao3 = new dao_1.Dao();
+var dao4 = new dao_1.Dao();
+var dao5 = new dao_1.Dao();
+dao.inserir(concessionaria);
+dao2.atualizar(pessoa);
+dao3.remover(1);
+dao4.selecionar(2);
+dao5.selecionarTodos();
+// let dao: ConcessionariaDao = new ConcessionariaDao()
+// let concessionaria = new Concessionaria('', []);
+// dao.inserir(concessionaria)
+// let dao2: PessoaDao = new PessoaDao()
+// let pessoa = new Pessoa('','');
+// dao2.atualizar(pessoa)
+// let dao3: CarroDao = new CarroDao()
+// let carro = new Carro('Corsa',4)
+// dao3.remover(434344)
+// let dao4: MotoDao = new MotoDao()
+// let moto = new Moto()
+// dao4.selecionarTodos()
