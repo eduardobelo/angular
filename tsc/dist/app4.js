@@ -2,6 +2,11 @@
 exports.__esModule = true;
 var concessionariaDao_1 = require("./concessionariaDao");
 var concessionaria_1 = require("./concessionaria");
+var pessoa_1 = require("./pessoa");
+var pessoaDao_1 = require("./pessoaDao");
 var dao = new concessionariaDao_1.ConcessionariaDao();
 var concessionaria = new concessionaria_1["default"]('', []);
+var dao2 = new pessoaDao_1.PessoaDao();
+var pessoa = new pessoa_1["default"]('', '');
 dao.insert(concessionaria);
+dao2.atualizar(pessoa);

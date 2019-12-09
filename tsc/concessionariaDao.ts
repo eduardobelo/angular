@@ -22,6 +22,6 @@ export class ConcessionariaDao implements DaoInterface {
     }
     selecionarTodos():[any] {
         console.log('Lógica de selecionar todos')
-        return  [new Array]
+        return  [new Concessionaria('', [])]
     }
 }

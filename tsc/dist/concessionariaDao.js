@@ -23,7 +23,7 @@ var ConcessionariaDao = /** @class */ (function () {
     };
     ConcessionariaDao.prototype.selecionarTodos = function () {
         console.log('Lógica de selecionar todos');
-        return [new Array];
+        return [new concessionaria_1["default"]('', [])];
     };
     return ConcessionariaDao;
 }());
